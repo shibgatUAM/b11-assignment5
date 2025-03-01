@@ -6,10 +6,200 @@
     <title>DevBoard</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--  CUSTOM FONTS & COLOR ADD  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3752FD',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 </head>
-<body>
+<body class="bg-[#F4F7FF]">
+    <header class="m-auto w-[1400px] pt-8 mb-6">
+        <div class="navbar bg-base-100 shadow-sm rounded-2xl">
+            <div class="flex-1">
+                <div class="flex gap-2 items-center p-[15px]">
+                    <div>
+                        <img src="assets/image/logo.png" alt="DevBoard" width="50" height="50">
+                    </div>
+                    <div>
+                        <a href="#" class="text-4xl tracking-wide"><span class="font-light">Dev</span><span class="font-bold">Board</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-none">
+                <div class="flex gap-4 items-center pr-4">
+                    <div class="flex gap-4 items-center justify-center bg-[#F4F7FF] p-2 rounded-full w-[125px]">
+                        <div>
+                            <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+                        </div>
+                        <div class="font-bold text-3xl">
+                            23
+                        </div>
+                    </div>
 
+                    <div class="bg-[#F4F7FF] p-2 rounded-full">
+                        <img src="assets/image/theme-btn.png" alt="Theme-btn" width="40" height="40" class="cursor-pointer">
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </header>
+
+    <div class="flex w-[1400px] m-auto gap-4">
+        <div class="w-[1034px] flex-1 m-auto rounded-2xl bg-white p-4 mb-16">
+            <div class="flex gap-2 items-center mb-6">
+                <div class="flex gap-6 items-center justify-center w-[263px] bg-[#F4F7FF] rounded-2xl p-6">
+                    <div class="bg-white rounded-full w-[64px] h-[64px] flex items-center justify-center">
+                        <input type="checkbox" checked="checked" class="checkbox checkbox-primary w-6 h-6 accent-primary" />
+                    </div>
+                    <div>
+                        <p class="text-base font-medium tracking-[0.03em] text-[#00303C]">Task Assigned</p>
+                        <p class="text-3xl font-bold">05</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-center w-[506px] bg-[#F4F7FF] rounded-2xl p-6 bg-[linear-gradient(90deg,_#3752FD_0%,_#6C7FFA_53%,_#9BA8F8_100%)]">
+                    <div>
+                        <img src="assets/image/board.png" alt="" width="60" height="60" />
+                    </div>
+                    <div class="text-2xl font-medium tracking-[0.03em] text-white">
+                        <p>Discover Something
+                            <br>New Today</p>
+                    </div>
+
+                </div>
+                <div class="flex gap-2 items-center w-[263px] bg-[#F4F7FF] rounded-2xl p-6">
+                    <div class="bg-white rounded-full w-[60px] h-[60px] flex items-center justify-center">
+                        <img src="assets/image/calender.png" alt="" width="28" height="28" />
+                    </div>
+                    <div>
+                        <p class="text-xl"> <span class="font-light">Wed,</span> <br> <span class="font-bold">Mar 01 2025</span></p>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-dashed border-2 border-[rgba(128,128,128,0.2)] mb-6">
+            <div class="grid grid-cols-3 gap-4 justify-center justify-items-center">
+                <div class="bg-[rgba(55,82,253,0.1)] h-[317px] p-8 rounded-xl">
+                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">ShopEase</p>
+                    <h3 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h3>
+                    <p class="bg-white p-4 rounded-sm text-base text-[rgba(0,0,0,0.5)] mb-2">Debug using Chrome DevTools, check for overlappi...</p>
+                    <hr class="border-dashed border-[rgba(128,128,128,0.2)] mb-2">
+                    <div class="flex gap-2 items-center justify-between">
+                        <div>
+                            <p class="text-sm tracking-[0.03em] text-[rgba(0,0,0,0.7)]">Deadline</p>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[rgba(55,82,253,0.1)] h-[317px] p-8 rounded-xl">
+                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">ShopEase</p>
+                    <h3 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h3>
+                    <p class="bg-white p-4 rounded-sm text-base text-[rgba(0,0,0,0.5)] mb-2">Debug using Chrome DevTools, check for overlappi...</p>
+                    <hr class="border-dashed border-[rgba(128,128,128,0.2)] mb-2">
+                    <div class="flex gap-2 items-center justify-between">
+                        <div>
+                            <p class="text-sm tracking-[0.03em] text-[rgba(0,0,0,0.7)]">Deadline</p>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[rgba(55,82,253,0.1)] h-[317px] p-8 rounded-xl">
+                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">ShopEase</p>
+                    <h3 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h3>
+                    <p class="bg-white p-4 rounded-sm text-base text-[rgba(0,0,0,0.5)] mb-2">Debug using Chrome DevTools, check for overlappi...</p>
+                    <hr class="border-dashed border-[rgba(128,128,128,0.2)] mb-2">
+                    <div class="flex gap-2 items-center justify-between">
+                        <div>
+                            <p class="text-sm tracking-[0.03em] text-[rgba(0,0,0,0.7)]">Deadline</p>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[rgba(55,82,253,0.1)] h-[317px] p-8 rounded-xl">
+                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">ShopEase</p>
+                    <h3 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h3>
+                    <p class="bg-white p-4 rounded-sm text-base text-[rgba(0,0,0,0.5)] mb-2">Debug using Chrome DevTools, check for overlappi...</p>
+                    <hr class="border-dashed border-[rgba(128,128,128,0.2)] mb-2">
+                    <div class="flex gap-2 items-center justify-between">
+                        <div>
+                            <p class="text-sm tracking-[0.03em] text-[rgba(0,0,0,0.7)]">Deadline</p>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[rgba(55,82,253,0.1)] h-[317px] p-8 rounded-xl">
+                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">ShopEase</p>
+                    <h3 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h3>
+                    <p class="bg-white p-4 rounded-sm text-base text-[rgba(0,0,0,0.5)] mb-2">Debug using Chrome DevTools, check for overlappi...</p>
+                    <hr class="border-dashed border-[rgba(128,128,128,0.2)] mb-2">
+                    <div class="flex gap-2 items-center justify-between">
+                        <div>
+                            <p class="text-sm tracking-[0.03em] text-[rgba(0,0,0,0.7)]">Deadline</p>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[rgba(55,82,253,0.1)] h-[317px] p-8 rounded-xl">
+                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">ShopEase</p>
+                    <h3 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h3>
+                    <p class="bg-white p-4 rounded-sm text-base text-[rgba(0,0,0,0.5)] mb-2">Debug using Chrome DevTools, check for overlappi...</p>
+                    <hr class="border-dashed border-[rgba(128,128,128,0.2)] mb-2">
+                    <div class="flex gap-2 items-center justify-between">
+                        <div>
+                            <p class="text-sm tracking-[0.03em] text-[rgba(0,0,0,0.7)]">Deadline</p>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[366px] flex-1 rounded-2xl bg-white p-4 mb-16">
+            <div class="flex gap-2 items-center justify-center mb-4">
+                <div>
+                    <img src="assets/image/activity.png" alt="DevBoard" width="24" height="24">
+                </div>
+                <div>
+                    <p>Activity Log</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-primary mb-4">Clear History</button>
+            </div>
+            <hr class="border-dashed border-[rgba(128,128,128,0.2)] mb-2">
+        </div>
+    </div>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
