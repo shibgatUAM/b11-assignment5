@@ -45,12 +45,12 @@
                         <div>
                             <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
                         </div>
-                        <div class="font-bold text-3xl">
+                        <div id="completedCount" class="font-bold text-3xl">
                             23
                         </div>
                     </div>
 
-                    <div class="bg-[#F4F7FF] p-2 rounded-full">
+                    <div id="themeToggle" class="bg-[#F4F7FF] p-2 rounded-full">
                         <img src="assets/image/theme-btn.png" alt="Theme-btn" width="40" height="40" class="cursor-pointer">
                     </div>
                 </div>
@@ -68,14 +68,14 @@
                     </div>
                     <div>
                         <p class="text-base font-medium tracking-[0.03em] text-[#00303C]">Task Assigned</p>
-                        <p class="text-3xl font-bold">05</p>
+                        <p id="taskAssigned" class="text-3xl font-bold">06</p>
                     </div>
                 </div>
                 <div class="flex gap-6 items-center w-[506px] bg-[#F4F7FF] rounded-2xl p-6 bg-[linear-gradient(90deg,_#3752FD_0%,_#6C7FFA_53%,_#9BA8F8_100%)]">
                     <div>
                         <img src="assets/image/board.png" alt="" width="60" height="60" />
                     </div>
-                    <div class="text-2xl font-medium tracking-[0.03em] text-white">
+                    <div id="newDiscoverItem" class="text-2xl font-medium tracking-[0.03em] text-white cursor-pointer">
                         <p>Discover Something
                             <br>New Today</p>
                     </div>
@@ -86,7 +86,7 @@
                         <img src="assets/image/calender.png" alt="" width="28" height="28" />
                     </div>
                     <div>
-                        <p class="text-xl"> <span class="font-light">Wed,</span> <br> <span class="font-bold">Mar 01 2025</span></p>
+                        <p id="dateDisplay" class="text-xl"></p>
                     </div>
                 </div>
             </div>
@@ -103,13 +103,28 @@
                             <p class="font-bold">21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button class="btn btn-primary completedTask">Completed</button>
                         </div>
                     </div>
                 </div>
                 <div class="bg-[rgba(55,82,253,0.1)] h-[317px] p-8 rounded-xl">
-                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">ShopEase</p>
-                    <h3 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h3>
+                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">CloudSync</p>
+                    <h3 class="text-2xl font-medium mb-4">Add Dark Mode</h3>
+                    <p class="bg-white p-4 rounded-sm text-base text-[rgba(0,0,0,0.5)] mb-2">Store the user's preference in localStorage, update CSS vari...</p>
+                    <hr class="border-dashed border-[rgba(128,128,128,0.2)] mb-2">
+                    <div class="flex gap-2 items-center justify-between">
+                        <div>
+                            <p class="text-sm tracking-[0.03em] text-[rgba(0,0,0,0.7)]">Deadline</p>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary completedTask">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[rgba(55,82,253,0.1)] h-[317px] p-8 rounded-xl">
+                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">SwiftPay</p>
+                    <h3 class="text-2xl font-medium mb-4">Optimize Home Page</h3>
                     <p class="bg-white p-4 rounded-sm text-base text-[rgba(0,0,0,0.5)] mb-2">Debug using Chrome DevTools, check for overlappi...</p>
                     <hr class="border-dashed border-[rgba(128,128,128,0.2)] mb-2">
                     <div class="flex gap-2 items-center justify-between">
@@ -118,13 +133,13 @@
                             <p class="font-bold">21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button class="btn btn-primary completedTask">Completed</button>
                         </div>
                     </div>
                 </div>
                 <div class="bg-[rgba(55,82,253,0.1)] h-[317px] p-8 rounded-xl">
-                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">ShopEase</p>
-                    <h3 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h3>
+                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">Meta</p>
+                    <h3 class="text-2xl font-medium mb-4">Add new emoji 🤲</h3>
                     <p class="bg-white p-4 rounded-sm text-base text-[rgba(0,0,0,0.5)] mb-2">Debug using Chrome DevTools, check for overlappi...</p>
                     <hr class="border-dashed border-[rgba(128,128,128,0.2)] mb-2">
                     <div class="flex gap-2 items-center justify-between">
@@ -133,13 +148,13 @@
                             <p class="font-bold">21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button class="btn btn-primary completedTask">Completed</button>
                         </div>
                     </div>
                 </div>
                 <div class="bg-[rgba(55,82,253,0.1)] h-[317px] p-8 rounded-xl">
-                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">ShopEase</p>
-                    <h3 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h3>
+                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">Google LLC</p>
+                    <h3 class="text-2xl font-medium mb-4">Integrate OpenAI API</h3>
                     <p class="bg-white p-4 rounded-sm text-base text-[rgba(0,0,0,0.5)] mb-2">Debug using Chrome DevTools, check for overlappi...</p>
                     <hr class="border-dashed border-[rgba(128,128,128,0.2)] mb-2">
                     <div class="flex gap-2 items-center justify-between">
@@ -148,13 +163,13 @@
                             <p class="font-bold">21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button class="btn btn-primary completedTask">Completed</button>
                         </div>
                     </div>
                 </div>
                 <div class="bg-[rgba(55,82,253,0.1)] h-[317px] p-8 rounded-xl">
-                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">ShopEase</p>
-                    <h3 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h3>
+                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">Glassdoar</p>
+                    <h3 class="text-2xl font-medium mb-4">Improve Job Searching</h3>
                     <p class="bg-white p-4 rounded-sm text-base text-[rgba(0,0,0,0.5)] mb-2">Debug using Chrome DevTools, check for overlappi...</p>
                     <hr class="border-dashed border-[rgba(128,128,128,0.2)] mb-2">
                     <div class="flex gap-2 items-center justify-between">
@@ -163,22 +178,7 @@
                             <p class="font-bold">21 March 2025</p>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Completed</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[rgba(55,82,253,0.1)] h-[317px] p-8 rounded-xl">
-                    <p class="bg-white w-[114px] p-2 text-base text-center rounded-md mb-6">ShopEase</p>
-                    <h3 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h3>
-                    <p class="bg-white p-4 rounded-sm text-base text-[rgba(0,0,0,0.5)] mb-2">Debug using Chrome DevTools, check for overlappi...</p>
-                    <hr class="border-dashed border-[rgba(128,128,128,0.2)] mb-2">
-                    <div class="flex gap-2 items-center justify-between">
-                        <div>
-                            <p class="text-sm tracking-[0.03em] text-[rgba(0,0,0,0.7)]">Deadline</p>
-                            <p class="font-bold">21 March 2025</p>
-                        </div>
-                        <div>
-                            <button class="btn btn-primary">Completed</button>
+                            <button class="btn btn-primary completedTask">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -195,9 +195,17 @@
             </div>
 
             <div class="text-center">
-                <button class="btn btn-primary mb-4">Clear History</button>
+                <button id="clearTask" class="btn btn-primary mb-4">Clear History</button>
             </div>
             <hr class="border-dashed border-[rgba(128,128,128,0.2)] mb-2">
+
+            <div id="completedNotify">
+                <ul id="completedList">
+<!--                    <li id="list" class="bg-[#F4F7FF] p-4 rounded-md">-->
+<!--                        <p>You have completed the task Add Dark Mode at 02:38PM</p>-->
+<!--                    </li>-->
+                </ul>
+            </div>
         </div>
     </div>
 <script src="assets/js/script.js"></script>

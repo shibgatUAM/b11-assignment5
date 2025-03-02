@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevBoard</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!--  CUSTOM FONTS & COLOR ADD  -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3752FD',
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="bg-[#F4F7FF]">
+<header class="m-auto w-[1400px] pt-8 mb-6">
+  <div class="navbar bg-base-100 shadow-sm rounded-2xl">
+    <div class="flex-1">
+      <div class="flex gap-2 items-center p-[15px]">
+        <div>
+          <img src="assets/image/logo.png" alt="DevBoard" width="50" height="50">
+        </div>
+        <div>
+          <a href="#" class="text-4xl tracking-wide"><span class="font-light">Dev</span><span class="font-bold">Board</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="flex-none">
+      <button id="backToDesk" class="btn btn-primary">Back to desk</button>
+    </div>
+  </div>
+</header>
+
+<script src="assets/js/script.js"></script>
+<script>
+  document.getElementById('backToDesk').addEventListener('click', function () {
+    window.location.href = 'index.html';
+  });
+</script>
+</body>
+</html>
