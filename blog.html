@@ -10,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap" rel="stylesheet">
+
   <!--  CUSTOM FONTS & COLOR ADD  -->
   <script>
     tailwind.config = {
@@ -20,6 +24,7 @@
           },
           fontFamily: {
             poppins: ['Poppins', 'sans-serif'],
+            secondFont: ["Noto Sans Bengali", 'sans-serif'],
           },
         }
       }
@@ -45,6 +50,80 @@
     </div>
   </div>
 </header>
+<main class="w-[1400px] m-auto">
+  <div class="join join-vertical bg-base-100 w-[1400px] m-auto mb-70">
+    <div class="collapse collapse-arrow join-item border-base-300 border">
+      <input type="radio" name="my-accordion-4" checked="checked" />
+      <div class="collapse-title font-bold text-xl">Question-1: What are the different ways to select an element in the DOM?</div>
+      <div class="collapse-content text-sm">
+        <p class="secondFont font-semibold text-xl">
+          DOM select করার ০৬ টি ধাপ আছে -
+        </p>
+        <br>
+        <ol class="secondFont text-lg">
+          <li>১. getElementById(): যা একটি নির্দিষ্ট id দিয়ে HTML Tag ধরতে হয়। </li>
+          <li>২. getElementsByClassName(): যা একটি নির্দিষ্ট class দিয়ে HTML Tag ধরতে হয়।  </li>
+          <li>৩. getElementsByTagName(): যা একটি নির্দিষ্ট tag দিয়ে HTML Tag ধরতে হয়।</li>
+          <li>৪. querySelector(): এখানে CSS selector ব্যবহার করতে হয়। </li>
+          <li>৫. querySelectorAll(): এখানে CSS selector এর সব গুলো ব্যবহৃত হয়। </li>
+          <li>৬. getAttribute(): নির্দিষ্ট একটি attribute এর মান সংগ্রহ করতে ব্যবহার হয়। </li>
+        </ol>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow join-item border-base-300 border">
+      <input type="radio" name="my-accordion-4" />
+      <div class="collapse-title font-bold text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+      <div class="collapse-content text-sm">
+        <p class="secondFont text-lg">
+          innerHTML, innerText, এবং textContent এই তিনটি প্রোপার্টি DOM-এ উপাদানের ভিতরের টেক্সট বা কনটেন্ট এক্সেস করার জন্য ব্যবহৃত হয়, তবে এগুলোর মধ্যে কিছু মৌলিক পার্থক্য রয়েছে। এখানে তাদের মধ্যে পার্থক্য ব্যাখ্যা করা হলো: <br>
+          innerHTML: <br>
+          -	এটি একটি উপাদানের ভিতরের HTML কনটেন্ট (টেক্সট এবং HTML ট্যাগ সহ) ফেরত দেয় বা সেট করে।<br>
+          -	HTML ট্যাগসহ পুরো কনটেন্ট পরিবর্তন করতে বা পড়তে এটি ব্যবহার করা হয়।<br>
+          <br>
+          innerText: <br>
+          - এটি একটি উপাদানের ভিতরের টেক্সট কনটেন্টকে ফেরত দেয়, তবে শুধুমাত্র দৃশ্যমান টেক্সট, অর্থাৎ CSS দ্বারা hide করা টেক্সট বা hidden উপাদান বাদ দিয়ে।<br>
+          - innerText সাধারণত টেক্সটের জন্য ব্যবহৃত হয়, HTML ট্যাগসহ কনটেন্ট নয়।<br>
+          <br>
+          textContent: <br>
+          - এটি একটি উপাদানের ভিতরের সব টেক্সট কনটেন্ট ফেরত দেয়, HTML ট্যাগগুলো বাদ দিয়ে। <br>
+          - এটি ব্রাউজারের স্টাইলিং বা রেন্ডারিং প্রভাব ছাড়াই সব টেক্সট ফেরত দেয়। <br>
+
+        </p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow join-item border-base-300 border">
+      <input type="radio" name="my-accordion-4" />
+      <div class="collapse-title font-bold text-xl">Question-3: What is event delegation in the DOM?</div>
+      <div class="collapse-content text-sm">
+        <p class="secondFont text-lg">
+          event delegation হলো একটি টেকনিক যেখানে parent উপাদানে event listener এ যোগ করা হয়,
+          পরিবর্তে প্রতিটি child উপাদানে আলাদাভাবে event listener যোগ করা হয়। এটি মূলত even bubble এর মাধ্যমে কাজ করে।
+        </p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow join-item border-base-300 border">
+      <input type="radio" name="my-accordion-4" />
+      <div class="collapse-title font-bold text-xl">Question-4: What is event bubbling in the DOM?</div>
+      <div class="collapse-content text-sm">
+        <p class="secondFont text-lg">
+          event bubbling হলো একটি প্রক্রিয়া যেখানে একটি event প্রথমে ঐ উপাদানে ঘটতে থাকে যেটিতে event শুরু হয়েছে,
+          তারপর তা parent উপাদানে চলে যায় এবং এরকম ভাবে উপরের দিকে bubbling হয়ে যায়।
+        </p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow join-item border-base-300 border">
+      <input type="radio" name="my-accordion-4" />
+      <div class="collapse-title font-bold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+      <div class="collapse-content text-sm">
+        <p class="secondFont text-lg">
+          JavaScript ব্যবহার করে নতুন element তৈরি করতে document.createElement() method ব্যবহার করা হয়। তারপর,
+          সেই element DOM-এ যোগ করার জন্য appendChild() method ব্যবহার করা হয়। element মুছে ফেলতে removeChild() মেথড ব্যবহার করা হয়।
+          এভাবে, HTML উপাদানগুলোর সাথে interact করে নতুন element তৈরি, যোগ এবং মুছে ফেলতে পারা যায়। 
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
 
 <script src="assets/js/script.js"></script>
 <script>
